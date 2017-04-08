@@ -1,6 +1,6 @@
 <?php
 /**
- * Permalink functions.
+ * Permalinks
  *
  * @category Category
  * @package  Package
@@ -10,7 +10,7 @@
  */
 
 /**
- * Remove trailing slashes from permalink.
+ * Remove trailing slashes from permalinks
  */
 function gulp_wp_permalinks( $link ) {
 	return untrailingslashit( $link );

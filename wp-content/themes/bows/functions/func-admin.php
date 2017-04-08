@@ -1,6 +1,6 @@
 <?php
 /**
- * Admin functions.
+ * Admin
  *
  * @category Category
  * @package  Package
@@ -10,15 +10,15 @@
  */
 
 /**
- * Credit in admin footer.
+ * Credit in admin footer
  */
 function gulp_wp_admin_footer() {
-	echo 'Developed by <a href="http://sjrdesigns.com">SJRdesigns</a>';
+	echo 'Developed by <a href="http://dewynters.com">Dewynters</a>';
 }
 add_filter( 'admin_footer_text', 'gulp_wp_admin_footer' );
 
 /**
- * Change default greeting.
+ * Change default greeting
  */
 function gulp_wp_greeting( $wp_admin_bar ) {
 	$user_id = get_current_user_id();
@@ -44,7 +44,7 @@ function gulp_wp_greeting( $wp_admin_bar ) {
 add_action( 'admin_bar_menu', 'gulp_wp_greeting', 11 );
 
 /**
- * Change admin menu order.
+ * Change admin menu order
  */
 function gulp_wp_admin_menu_order( $menu_ord ) {
 	if ( ! $menu_ord ) return true;
@@ -54,6 +54,7 @@ function gulp_wp_admin_menu_order( $menu_ord ) {
 		'separator1', // First separator.
 		'edit.php', // Posts.
 		'edit.php?post_type=page', // Pages.
+		'edit.php?post_type=press', // Press.
 		'upload.php', // Media.
 		'separator2', // Second separator.
 		'themes.php', // Appearance.

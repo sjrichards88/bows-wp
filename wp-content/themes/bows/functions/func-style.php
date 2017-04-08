@@ -1,6 +1,6 @@
 <?php
 /**
- * Style functions.
+ * Styles
  *
  * @category Category
  * @package  Package
@@ -10,7 +10,7 @@
  */
 
 /**
- * Enqueue theme styles.
+ * Enqueue styles
  */
 function gulp_wp_theme_styles() {
 	wp_register_style(

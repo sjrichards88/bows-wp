@@ -1,6 +1,6 @@
 <?php
 /**
- * Script functions.
+ * Scripts
  *
  * @category Category
  * @package  Package
@@ -10,7 +10,7 @@
  */
 
 /**
- * Enqueue theme scripts.
+ * Enqueue scripts
  */
 function gulp_wp_theme_scripts() {
 	wp_register_script(
