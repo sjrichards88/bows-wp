@@ -16,8 +16,6 @@
 
  */
 
-
-
 /*============================
 =            Misc            =
 ============================*/
@@ -38,16 +36,24 @@ section {
 	}
 }
 
-article {
-	padding: $grid-gutter-width 0 $grid-gutter-width 0;
-	@media (min-width: $screen-sm) {
-		padding: $grid-gutter-width * 2;
-	}
-
-}
+// article {
+// 	padding: $grid-gutter-width 0 $grid-gutter-width 0;
+// 	@media (min-width: $screen-sm) {
+// 		padding: $grid-gutter-width * 2;
+// 	}
+// }
 
 img {
 	max-width: 100%;
+}
+
+.flexible-block {
+	padding-top: $grid-gutter-width / 2;
+	padding-bottom: $grid-gutter-width / 2;
+	@media (min-width: $screen-sm) {
+		padding-top: $grid-gutter-width;
+		padding-bottom: $grid-gutter-width;
+	}
 }
 
 .gen-padding {
@@ -306,10 +312,10 @@ img {
 }
 
 .intro-text, .block-text {
-	padding: 0 $grid-gutter-width / 2;
-	@media (min-width: $screen-sm) {
-		padding: $grid-gutter-width $grid-gutter-width / 2;
-	}
+	// padding: 0 $grid-gutter-width / 2;
+	// @media (min-width: $screen-sm) {
+	// 	padding: $grid-gutter-width $grid-gutter-width / 2;
+	// }
 	p {
 		font-size: $font-size-h5;
 		line-height: 1.4;
@@ -755,7 +761,6 @@ h2 {
 
 //Content and image side by side
 .ci-wrapper {
-	padding-bottom: $grid-gutter-width;
 	.ci-row {
 		display: flex;
 		align-items: stretch;

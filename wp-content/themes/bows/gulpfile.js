@@ -27,7 +27,7 @@ var config = {
     bootstrapDir: './node_modules/bootstrap-sass',
     jQueryDir: './node_modules/jquery',
     modernizrDir: './node_modules/npm-modernizr',
-    publicDir: './build',
+    publicDir: './',
     projectScssDir: './src/scss',
     projectJsDir: './src/js',
     projectImagesDir: './src/images'

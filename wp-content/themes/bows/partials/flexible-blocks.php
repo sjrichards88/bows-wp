@@ -6,33 +6,21 @@ if( have_rows('content_blocks') ):
     while ( have_rows('content_blocks') ) : the_row();
 
 		// check current row layout
-        if( get_row_layout() == 'faq_block' ):
+        if( get_row_layout() == 'text_block' ):
 
-        	include( get_template_directory() . '/partials/flexible-faq-block.php');
+        	include( get_template_directory() . '/partials/flexible-text-block.php');  
 
-        elseif ( get_row_layout() == 'text_full_width' ):
+        elseif ( get_row_layout() == 'image_text_block_blue' ):
 
-            include( get_template_directory() . '/partials/flexible-text-full-width.php');           
+            include( get_template_directory() . '/partials/flexible-image-text-block-blue.php');        
 
-        elseif ( get_row_layout() == 'text_narrow_width' ):
+        elseif ( get_row_layout() == 'image_text_block_pink' ):
 
-        	include( get_template_directory() . '/partials/flexible-text-narrow-width.php');        
+            include( get_template_directory() . '/partials/flexible-image-text-block-pink.php');         
 
-        elseif ( get_row_layout() == 'text_with_image' ):
+        elseif ( get_row_layout() == 'link_block_grid' ):
 
-        	include( get_template_directory() . '/partials/flexible-text-with-image.php');        
-
-        elseif ( get_row_layout() == 'text_with_map' ):
-
-            include( get_template_directory() . '/partials/flexible-text-with-map.php');      
-
-        elseif ( get_row_layout() == 'cast_block' ):
-
-            include( get_template_directory() . '/partials/flexible-cast-block.php');        
-
-        elseif ( get_row_layout() == 'credits_block' ):
-
-        	include( get_template_directory() . '/partials/flexible-credits-block.php');
+            include( get_template_directory() . '/partials/flexible-link-block-grid.php'); 
 
         endif;
 

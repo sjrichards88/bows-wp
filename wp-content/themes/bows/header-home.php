@@ -24,21 +24,27 @@
 <body>
     
     <a href="#" class="glyphicon glyphicon-menu-up scroll-up"></a>
-    
-    <header class="header">
+
+    <header class="header home">
 
         <?php include(get_template_directory() . '/partials/navigation.php'); ?>
         
-        <?php 
-            $image = get_field('header_image');
-            if ($image):
-        ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-        <?php endif; ?>
-
         <div class="container intro">
-            <h1><?php the_title(); ?></h1>
+            <h1><?php the_field('full_page_slider_title_line_1'); ?>
+            <br/><?php the_field('full_page_slider_title_line_2'); ?></h1>
         </div>
 
+        <?php if ( have_rows('full_page_slider') ):   ?>
+            <div id="home-carousel" class="owl-carousel home-carousel">
+            <?php  while ( have_rows('full_page_slider') ) : the_row(); 
+                    $image = get_sub_field('image');
+            ?>
+                <div class="home-carousel__item" style="background-image: url(<?php echo $image['url']; ?>);"></div>
+            <?php endwhile; ?>
+            </div>
+        <?php endif; ?>
+
+        <a href="#main" class="glyphicon glyphicon-menu-down scroll-down"></a>
+
     </header>
-    <main>
+    <main id="main">

@@ -13,7 +13,7 @@
  * Credit in admin footer
  */
 function gulp_wp_admin_footer() {
-	echo 'Developed by <a href="http://dewynters.com">Dewynters</a>';
+	echo 'Developed by <a href="http://sjrdesigns.com">SJRdesigns</a>';
 }
 add_filter( 'admin_footer_text', 'gulp_wp_admin_footer' );
 
@@ -54,7 +54,6 @@ function gulp_wp_admin_menu_order( $menu_ord ) {
 		'separator1', // First separator.
 		'edit.php', // Posts.
 		'edit.php?post_type=page', // Pages.
-		'edit.php?post_type=press', // Press.
 		'upload.php', // Media.
 		'separator2', // Second separator.
 		'themes.php', // Appearance.

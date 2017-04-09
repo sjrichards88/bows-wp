@@ -77,8 +77,8 @@ var core = function($) {
     	// Lazy load images
     	$('.modal-custom .carousel').each(function() {
 	    	$(this).on('slid.bs.carousel', function () {
-	    		var nextImage = $('.item.active').next('.item').find('img');
-	    		var prevImage = $('.item.active').prev('.item').find('img');
+	    		var nextImage = $(this).find('.item.active').next('.item').find('img');
+	    		var prevImage = $(this).find('.item.active').prev('.item').find('img');
 
 	    		if (nextImage.length > 0) {
 	    			nextImage.attr('src', nextImage.attr('data-src'));
@@ -92,17 +92,17 @@ var core = function($) {
     	});
 
     	$('.modal-custom.gallery').each(function() {
+    		$this = $(this);
     		$(this).on('show.bs.modal', function (e) {
-    			var nextImage = $('.item.active').next('.item').find('img');
-    			var prevImage = $('.item.active').prev('.item').find('img');
-
+    			var nextImage = $this.find('.item.active').next('.item').find('img');
+    			var lastItem = $this.find('.item').eq($this.find('.item').length - 1);
+    			var lastImage = lastItem.find('img');
     			if (nextImage.length > 0) {
+    				// Load next image after first
     				nextImage.attr('src', nextImage.attr('data-src'));
-    			}	    		
-
-    			if (prevImage.length > 0) {
-    				prevImage.attr('src', prevImage.attr('data-src'));
-    			}
+    			}	
+    			// Load last image on modal show incase user clicks back first    		
+    			lastImage.attr('src', lastImage.attr('data-src'));
     		});
     	});
 

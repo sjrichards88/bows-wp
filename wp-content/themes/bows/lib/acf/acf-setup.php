@@ -2,7 +2,7 @@
 /**
  * Include ACF
  *
- * @since Scrictly Come Dancing 1.0
+ * @since Bows 1.0
  */
 
 // 1. customize ACF path
@@ -46,12 +46,14 @@ if ( function_exists('acf_add_options_page') ) {
 
 }
 
-//set a key for hte google maps api
-function my_acf_init() {
+// //set a key for hte google maps api
+// function my_acf_init() {
 
-	acf_update_setting('google_api_key', 'AIzaSyDMsvRUDvYhv02Qcj4oUr45r_5_qocO6rY');
-}
+// 	acf_update_setting('google_api_key', 'AIzaSyDMsvRUDvYhv02Qcj4oUr45r_5_qocO6rY');
+// }
 
-add_action('acf/init', 'my_acf_init');
+// add_action('acf/init', 'my_acf_init');
 
 
+// // 3. Hide ACF field group menu item
+// add_filter('acf/settings/show_admin', '__return_false');

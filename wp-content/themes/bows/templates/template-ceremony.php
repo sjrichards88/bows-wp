@@ -1,12 +1,14 @@
 <?php
 /**
- * Default page template.
+ * Template
  *
  * @category Category
  * @package  Package
  * @author   Author
  * @license  License
  * @link     Link
+ *
+ * Template Name: Ceremony template
  */
 
 get_header();
