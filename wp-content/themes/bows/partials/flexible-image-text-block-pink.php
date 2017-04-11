@@ -6,7 +6,7 @@
 <div class="container-max flexible-block">
     <div class="ci-wrapper">
         <div class="ci-row image-first">                            
-            <div class="ci-child ci-width-30 extra-padding bg-primary ci-text">
+            <div class="ci-child ci-width-40 extra-padding bg-primary ci-text">
                 <div class="ci-content">
                     <?php the_sub_field('text'); ?>
                     <?php if ($gallery): ?>
@@ -15,7 +15,41 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="ci-child ci-width-70" style="background-image: url(<?php echo $image['url']; ?>);"></div>
+            <?php if (count($image) > 1): // Gallery ?>
+
+                <div class="ci-child ci-width-60 c-bg-carousel">
+                    <div class="c-bg-carousel__inner">
+
+                    <?php $count = 0; foreach ($image as $i): ?>
+                        
+                        <?php if ($count == 0): // Gallery ?>
+
+                            <div class="c-bg-carousel__item" style="background-image: url(<?php echo $i['url']; ?>);"></div>
+
+                        <?php else: ?>
+                            
+                            <div class="c-bg-carousel__item" data-src="<?php echo $i['url']; ?>"></div>
+
+                        <?php endif; ?>
+
+                    <?php $count++; endforeach; ?>
+
+                    </div>
+                    <button class="c-bg-carousel__control prev pink">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="c-bg-carousel__control next pink">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
+
+            <?php else: // Static image ?>
+
+                <div class="ci-child ci-width-60" style="background-image: url(<?php echo $image[0]['url']; ?>);"></div>
+
+            <?php endif; ?>
         </div>
     </div>
 </div>

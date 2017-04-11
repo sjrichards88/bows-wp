@@ -1,14 +1,14 @@
 {
-    "key": "group_58ea9f2185fc8",
-    "title": "General",
+    "key": "group_58ebed5a9721e",
+    "title": "Ceremonies",
     "fields": [
         {
-            "key": "field_58ea9f3fb07d5",
-            "label": "Header image",
-            "name": "header_image",
+            "key": "field_58ebed6d85a62",
+            "label": "Featured image",
+            "name": "featured_image",
             "type": "image",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -18,10 +18,10 @@
             "return_format": "array",
             "preview_size": "thumbnail",
             "library": "all",
-            "min_width": "",
+            "min_width": 1120,
             "min_height": "",
             "min_size": "",
-            "max_width": "",
+            "max_width": 1500,
             "max_height": "",
             "max_size": "",
             "mime_types": ""
@@ -31,12 +31,12 @@
         [
             {
                 "param": "page_template",
-                "operator": "!=",
-                "value": "templates\/template-home.php"
+                "operator": "==",
+                "value": "templates\/template-ceremony.php"
             }
         ]
     ],
-    "menu_order": 1,
+    "menu_order": 0,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -46,5 +46,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1491857057
+    "modified": 1491857068
 }

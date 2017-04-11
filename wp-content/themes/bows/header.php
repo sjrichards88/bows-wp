@@ -8,9 +8,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
     <!-- Bootstrap -->
-    <link href='http://fonts.googleapis.com/css?family=Cinzel&#038;subset=latin' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Ruthie" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:300,400,700" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Cinzel|Ruthie|PT+Sans:300,400,700|Satisfy:300,400,700' rel='stylesheet'>
 
     <?php wp_head(); ?>
 

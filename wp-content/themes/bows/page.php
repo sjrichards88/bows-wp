@@ -10,7 +10,6 @@
  */
 
 get_header();
-
 ?>
 
 <section>

@@ -58,8 +58,8 @@
                             "key": "field_58ea8040edc6d",
                             "label": "Image",
                             "name": "image",
-                            "type": "image",
-                            "instructions": "",
+                            "type": "gallery",
+                            "instructions": "Slider if more than one image added",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -67,8 +67,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
+                            "min": "",
+                            "max": "",
+                            "insert": "append",
                             "library": "all",
                             "min_width": "",
                             "min_height": "",
@@ -136,8 +137,8 @@
                             "key": "field_58ea8081edc70",
                             "label": "Image",
                             "name": "image",
-                            "type": "image",
-                            "instructions": "",
+                            "type": "gallery",
+                            "instructions": "Slider if more than one image added",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -145,8 +146,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
+                            "min": "",
+                            "max": "",
+                            "insert": "append",
                             "library": "all",
                             "min_width": "",
                             "min_height": "",
@@ -306,13 +308,15 @@
             }
         ]
     ],
-    "menu_order": 1,
+    "menu_order": 0,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1491767778
+    "modified": 1491856433
 }

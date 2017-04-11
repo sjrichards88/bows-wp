@@ -362,6 +362,14 @@ img {
 	margin: 0 auto;
 	padding-left: $grid-gutter-width / 2;
 	padding-right: $grid-gutter-width / 2;
+	&:after,
+	&:before {
+		content: ' ';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
 }
 
 
