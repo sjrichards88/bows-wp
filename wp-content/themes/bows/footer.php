@@ -51,13 +51,13 @@
 						$fax = get_field( 'fax', 'option' );
 						if ($email): 
 					?>
-                    <li><a href="mailto:<?php echo $email; ?>">Email: <?php echo $email; ?></a></li>
+                    <li>Email: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
                     <?php endif; ?>
                     <?php if ($phone): ?>
-                    <li><a href="tel:<?php echo $phone; ?>">Phone: <?php echo $phone; ?></a></li>
+                    <li>Phone: <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></li>
                     <?php endif; ?>
                     <?php if ($fax): ?>
-                    <li><a href="fax:<?php echo $fax; ?>">Fax: <?php echo $fax; ?></a></li>
+                    <li>Fax: <a href="fax:<?php echo $fax; ?>"><?php echo $fax; ?></a></li>
                     <?php endif; ?>
                     </ul>
                 </nav>
