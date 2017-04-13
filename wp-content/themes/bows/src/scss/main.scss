@@ -807,7 +807,7 @@ h2 {
 			}
 			&.ci-width-70 {
 				width: 100%;
-				min-height: 350px;
+				min-height: 450px;
 				@media (min-width: $screen-sm) {
 					width: 50%;
 				}
@@ -826,7 +826,7 @@ h2 {
 			}
 			&.ci-width-60 {
 				width: 100%;
-				min-height: 350px;
+				min-height: 450px;
 				@media (min-width: $screen-sm) {
 					width: 50%;
 				}
@@ -908,6 +908,7 @@ h2 {
     	position: absolute;
     	top: 0;
     	bottom: 0;
+    	height: 100%;
     	width: 80px;
     	border: none;
     	transition: all 0.3s ease;
