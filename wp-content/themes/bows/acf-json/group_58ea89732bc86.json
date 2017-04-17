@@ -144,6 +144,25 @@
             "min": "",
             "max": "",
             "step": ""
+        },
+        {
+            "key": "field_58ee75ac03feb",
+            "label": "Address",
+            "name": "address",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -163,5 +182,9 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
+<<<<<<< HEAD
     "modified": 1491947487
+=======
+    "modified": 1492022709
+>>>>>>> 613af1ee695ab4d54448e5f5040ccdbc7a402979
 }

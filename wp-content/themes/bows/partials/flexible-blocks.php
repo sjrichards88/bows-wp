@@ -20,7 +20,11 @@ if( have_rows('content_blocks') ):
 
         elseif ( get_row_layout() == 'link_block_grid' ):
 
-            include( get_template_directory() . '/partials/flexible-link-block-grid.php'); 
+            include( get_template_directory() . '/partials/flexible-link-block-grid.php');         
+
+        elseif ( get_row_layout() == 'gallery_block_grid' ):
+
+            include( get_template_directory() . '/partials/flexible-gallery-block-grid.php'); 
 
         endif;
 
